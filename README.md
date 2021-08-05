@@ -179,6 +179,7 @@ For the final test, 12 images were randomly read from the test set and given to 
 The prediction of model is at the top of each image.
 
 If that prediction is true the word "True" would be printed next to it and if it is not true the word "False" would be printed next to it.
+
 ![](https://github.com/shuoros/car-vs-truck-classification/blob/main/etc/result.png)
 
 ## Download
