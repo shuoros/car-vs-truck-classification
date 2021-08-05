@@ -18,7 +18,7 @@ Test set:
 
 /data/test/truck
 
-The original dataset include **393** car images and **396** truck images. Since one of the car images was broken, it was removed before the process and the car images were reduced to **392**, then 80% of each were selected for trainset and the rest 20% for testset.
+The original dataset include **393** car images and **396** truck images. Since one of the car images was broken, it has been removed before the process and the car images were reduced to **392**, then 80% of each were selected for trainset and the rest 20% for testset.
 
 **Attention**, the image in this path of original dataset  `/datasets/Datasets/car/181535.jpg` is broken!
     
@@ -82,7 +82,7 @@ class TestDataset(Dataset):
     return img_tensor, class_id
 ```
 
-For each train and test Dataset classes, First i read all the images that are in the folders and give them a 0 or 1 label acording to from wich folder(cars or trucks) they were read.
+For each train and test Dataset classes, First I read all the images that were in the folders and give them a 0 or 1 label according to from which folder(cars or trucks) they were read.
 
 If the image was read from the car folder, It would get label 0, And if it was read from the truck folder, It would get label 1.
 
