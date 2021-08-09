@@ -1,7 +1,7 @@
 # Car vs truck classification in Pytorch
 - Computer Vision course final project.
 
-- Intructed by [Dr. Shahbahrami](https://scholar.google.com/citations?user=RbUZMnEAAAAJ&hl=en "‪Asadollah Shahbahrami‬ - ‪Google Scholar‬") at [University of Guilan](https://guilan.ac.ir/en/home "University of Guilan‬").
+- Instructed by [Dr. Shahbahrami](https://scholar.google.com/citations?user=RbUZMnEAAAAJ&hl=en "‪Asadollah Shahbahrami‬ - ‪Google Scholar‬") at [University of Guilan](https://guilan.ac.ir/en/home "University of Guilan‬").
 
 ## Dataset
 I used an unofficial handheld dataset collected in Kaggle, Which is available at https://www.kaggle.com/enesumcu/car-and-truck, And re-folded it according to the following structure:
@@ -115,7 +115,7 @@ data_sets = {
 }
 ```
 
-The model is a pretrained ResNet50 with a .5 Dropout and 6 Linear layers that each one has a .2 Dropout as fc **(fully connected layer)** for top of the model. 
+The model is a pretrained ResNet50 with 6 Linear layers that each one has a .2 Dropout as fc **(fully connected layer)** for top of the model. 
 
 I used `CrossEntropyLoss()` for criterion and `SGD` optimizer for optimizition.
 ```python
@@ -174,7 +174,7 @@ The following results were obtained:
 
 ## test
 
-For the final test, 12 images were randomly read from the test set and given to the model to classify them.
+For the final test, 12 images were randomly selected from the test set and given to the model to classify them.
 
 The prediction of model is at the top of each image.
 
